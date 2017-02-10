@@ -1,3 +1,6 @@
+---
+#Jekyll front matter
+---
 /*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
 
 
@@ -95,7 +98,7 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
+@import "cvb-menu";
 
 /* apply a natural box layout model to all elements, but allowing components to change */
 
@@ -291,8 +294,10 @@ a:visited {
     justify-content: center;
     align-items: center;
 }
-.site-header.home {
-    height: 50vh;
+@media only screen and (min-width: 37.5em) {
+    .site-header.home {
+        height: 50vh;
+    }
 }
 .heading {
     padding: 70px 0;
@@ -336,7 +341,11 @@ a:visited {
     z-index: 1000;
 }
 .site-header nav.scroll {
-    background: rgba(99, 119, 156, 0.8);
+    ul {
+        position: fixed;
+        top: 0;
+        background: rgba(99, 119, 156, 0.8);
+    }
 }
 .site-header nav ul {
     text-align: right;

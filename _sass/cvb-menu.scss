@@ -1,0 +1,36 @@
+a.cvb-logo {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    background: url('../img/tile.svg');
+    background-repeat: no-repeat;
+    background-size: 60px 60px;
+    background-position: top left;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    z-index: 9999;
+    /* hide text */
+    padding-left: 80px;
+    overflow: hidden;
+    &.visited {
+        color: #fff;
+    }
+    &:hover {
+        /* show text */
+        width: 220px;
+    }
+    @media only screen and (min-width: 64em) {
+        width: 100px;
+        height: 100px;
+        background-size: 100px 100px;
+        padding-left: 120px;
+        &:hover {
+            /* show text */
+            width: 320px;
+        }
+    }
+}
