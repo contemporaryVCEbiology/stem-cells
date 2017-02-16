@@ -1,5 +1,5 @@
 .cvb-nav {
-    background: #5DBEF0;
+    background: #fff;
     padding: 0 10px;
     position: relative;
     font-family: 'Merriweather', 'Georgia', serif; 
@@ -17,11 +17,11 @@
         
     }
     a.cvb-logo {
-        color: #fff;
+        color: #5DBEF0;
         text-decoration: none;
         
         &.visited {
-            color: #fff;
+            color: #5DBEF0;
         }
     }
     @media only screen and (min-width: 64em) {
