@@ -99,6 +99,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 @import "cvb-menu";
+@import "video";
 
 /* apply a natural box layout model to all elements, but allowing components to change */
 
@@ -192,6 +193,11 @@ a,
 a:visited {
     color: #63779c;
 }
+figcaption {
+    font-size: 14/16*1em;
+    text-align: center;
+}
+
 @media only screen and (min-width: 30em) {
     .half {
         width: 50%;
