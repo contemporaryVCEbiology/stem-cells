@@ -27,6 +27,7 @@
     @media only screen and (min-width: 64em) {
         padding: 0.6em 10px 0.6em 140px;
         position: fixed;
+        top: 0;
         z-index: 9999;
         width: 100%;
         &:before {

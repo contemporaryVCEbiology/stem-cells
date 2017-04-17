@@ -1,4 +1,20 @@
+var cvbnavHeight;
+
+function bodyTopPadding(){
+    /*
+     * add padding for cvb nav
+     */
+    if($( window ).width() > 1023) {
+        $('body').css('paddingTop', cvbnavHeight);
+    } else {
+        $('body').css('paddingTop', 0);
+    }
+}
+
 $(document).ready(function(){
+    
+    cvbnavHeight = $('.cvb-nav').outerHeight();
+    bodyTopPadding();
    
     /*
      * hover handler for resource box to show 'open' and 'open in new tab' links
@@ -50,7 +66,16 @@ $(document).ready(function(){
 $(document).on("scroll  touchmove",function(){
     if($(document).scrollTop()>100){
         $('.site-header nav').addClass('scroll');
+        if($( window ).width() > 1023) {
+            $('.site-header nav ul').css('top', cvbnavHeight);
+        }
     } else{
         $('.site-header nav').removeClass('scroll');
-    }  
+        $('.site-header nav ul').css('top', 0);
+    }
+    
+});
+$(window).resize(function() {
+    cvbnavHeight = $('.cvb-nav').outerHeight();
+    bodyTopPadding();
 });

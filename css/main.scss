@@ -354,7 +354,7 @@ figcaption {
     }
 }
 .site-header nav ul {
-    text-align: right;
+    text-align: center;
     list-style: none;
     margin: 0;
     position: relative;
@@ -364,22 +364,19 @@ figcaption {
     display: inline-block;
     color: #444;
 }
-.site-header nav li:first-child {
-    position: absolute;
-    left: 0;
-}
 .site-header nav li a {
     padding: 20px 5px;
     margin: 0 5px;
     display: block;
     text-decoration: none;
-    color: #dde4ec;
+    color: #fff;
+    text-shadow: 1px 1px 0 #131B2E;
 }
 .site-header nav li a:hover {
     background: #63779c;
 }
 .site-header nav li a.active {
-    color: #999;
+    color: #ccc;
 }
 .site-header nav li a.active:hover {
     background: none;
