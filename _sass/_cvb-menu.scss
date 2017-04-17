@@ -2,7 +2,8 @@
     background: #fff;
     padding: 0 10px;
     position: relative;
-    font-family: 'Merriweather', 'Georgia', serif; 
+    font-family: 'Merriweather', 'Georgia', serif;
+    background: #546E7A;
     &:before {
         content: "";
         display: inline-block;
@@ -17,14 +18,17 @@
         
     }
     a.cvb-logo {
-        color: #5DBEF0;
+        color: #fff;
         text-decoration: none;
         &.visited {
-            color: #5DBEF0;
+            color: #fff;
         }
     }
     @media only screen and (min-width: 64em) {
         padding: 0.6em 10px 0.6em 140px;
+        position: fixed;
+        z-index: 9999;
+        width: 100%;
         &:before {
             position: absolute;
             z-index: 9999;
