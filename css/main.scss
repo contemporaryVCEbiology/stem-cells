@@ -240,7 +240,6 @@ figcaption {
 }
 
 /* clearfix */
-
 .col-3max:before,
 .col-3max:after {
     content: " ";
@@ -290,6 +289,9 @@ figcaption {
         margin-left: 0;
     }
 }
+
+
+
 .site-header {
     background-image: url('../img/shutterstock_270298538.jpg');
     background-size: cover;
@@ -609,6 +611,11 @@ ul.tabs li a.current {
 .resources.flex {
     display: flex;
     flex-wrap: wrap;
+}
+/* clearfix */
+.flex.col-3max:before,
+.flex.col-3max:after {
+    display: none;
 }
 .resources .phase {
     margin-bottom: 3em;
