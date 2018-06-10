@@ -62,18 +62,29 @@ $(document).ready(function(){
           }
         }
     });
+
+    /*
+     * show contributor overlay
+     */
+    $('.contributors li.detailed').click(function(){
+        $(this).contents().clone().appendTo('.overlay-child');
+        $('.overlay').addClass('on');
+    });
+    $('.overlay').click(function(){
+        $('.overlay-child').empty();
+        $(this).removeClass('on');
+    });
 });
 $(document).on("scroll  touchmove",function(){
     if($(document).scrollTop()>100){
-        $('.site-header nav').addClass('scroll');
+        $('.main-nav').addClass('scroll');
         if($( window ).width() > 1023) {
-            $('.site-header nav ul').css('top', cvbnavHeight);
+            $('.main-nav > ul').css('top', cvbnavHeight);
         }
     } else{
-        $('.site-header nav').removeClass('scroll');
-        $('.site-header nav ul').css('top', 0);
+        $('.main-nav').removeClass('scroll');
+        $('.main-nav > ul').css('top', 0);
     }
-    
 });
 $(window).resize(function() {
     cvbnavHeight = $('.cvb-nav').outerHeight();
